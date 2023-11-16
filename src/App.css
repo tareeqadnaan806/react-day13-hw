@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  max-width: 1300px;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img-1 {
+  grid-area: img-1;
+}
+.img-2 {
+  grid-area: img-2;
+}
+.img-3 {
+  grid-area: img-3;
+}
+.img-4 {
+  grid-area: img-4;
+}
+.img-5 {
+  grid-area: img-5;
+}
+.img-6 {
+  grid-area: img-6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  display: grid;
+  grid-template-areas:
+    "img-1 img-2 img-3 img-3"
+    "img-4 img-4 img-3 img-3"
+    "img-4 img-4 img-5 img-6";
+  gap: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.image-1q {
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.input-border {
+  border: 2px solid black;
+  padding: 0.5rem 1rem;
+  width: 350px;
+  border-radius: 10px;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  box-shadow: 2px 2px grey;
+}
+
+#itemDetailsPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 5px solid #ccc;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+/* Add these styles to your existing CSS */
+
+.popup h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.popup p {
+  margin-bottom: 20px;
+}
+
+.closeButton {
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background-color: #d32f2f;
 }
