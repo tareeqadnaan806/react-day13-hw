@@ -68,7 +68,7 @@ const Hero = () => {
                     return (
                       <div
                         key={dayKey}
-                        className="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-slate-50/80 p-5 shadow-inner"
+                        className="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-slate-50/80 p-2 shadow-inner"
                       >
                         <div className="flex items-center justify-between">
                           <h3 className="text-lg font-semibold text-slate-900">

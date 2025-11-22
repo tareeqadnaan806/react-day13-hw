@@ -5,14 +5,14 @@ const Header = () => {
     <div className="container mx-auto px-4 py-5 space-y-12">
       <div className="rounded-3xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white shadow-2xl">
         <div className="flex flex-col gap-6 p-8 md:p-10">
-          <div className="flex flex-col items-center gap-4 md:justify-between">
-            <div className="flex items-center gap-4">
+          <div className="flex flex-col items-center gap-2 md:justify-between">
+            <div className="flex items-center gap-2"> 
               <img
                 src="https://st4.depositphotos.com/4396953/19860/v/450/depositphotos_198602274-stock-illustration-gym-or-fitness-logo-sign.jpg"
                 alt="BodyRevive logo"
                 className="w-20 rounded-full bg-white/10 p-2"
               />
-              <h1 className="text-4xl font-momo font-bold tracking-wide">
+              <h1 className="text-2xl font-momo font-bold tracking-wide">
                 BodyRevive
               </h1>
             </div>
@@ -109,7 +109,7 @@ const Header = () => {
         <p className="mt-3 text-slate-700">
           Turn progress into motivation with these simple weekly habits.
         </p>
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
+        <div className="mt-6 grid gap-4">
           <div className="rounded-xl bg-white p-5 shadow-md">
             <h3 className="text-lg font-semibold text-slate-900">
               Weekly Photos
@@ -331,7 +331,7 @@ const Header = () => {
           <p className="mt-2 text-base text-slate-600">
             Dial in these habits so hunger stays steady and binge urges fade.
           </p>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          <div className="mt-6 grid gap-4">
             <div className="rounded-2xl bg-white p-5 shadow-md">
               <h4 className="text-lg font-semibold text-slate-900">
                 Hydrate Smarter
